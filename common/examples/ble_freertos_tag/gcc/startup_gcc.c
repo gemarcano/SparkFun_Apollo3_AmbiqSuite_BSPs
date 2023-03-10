@@ -51,7 +51,7 @@
 // Forward declaration of interrupt handlers.
 //
 //*****************************************************************************
-extern void Reset_Handler(void)       __attribute ((naked));
+extern void Reset_Handler(void);
 extern void NMI_Handler(void)         __attribute ((weak));
 extern void HardFault_Handler(void)   __attribute ((weak));
 extern void MemManage_Handler(void)   __attribute ((weak, alias ("HardFault_Handler")));

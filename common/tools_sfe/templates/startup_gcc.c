@@ -45,13 +45,15 @@
 //*****************************************************************************
 
 #include <stdint.h>
+#include <string.h>
+#include <cmsis_compiler.h>
 
 //*****************************************************************************
 //
 // Forward declaration of interrupt handlers.
 //
 //*****************************************************************************
-extern void Reset_Handler(void)       __attribute ((naked));
+extern void Reset_Handler(void);
 extern void NMI_Handler(void)         __attribute ((weak));
 extern void HardFault_Handler(void)   __attribute ((weak));
 extern void MemManage_Handler(void)   __attribute ((weak, alias ("HardFault_Handler")));
@@ -107,7 +109,7 @@ extern int main(void);
 
 // '_sstack' accesses the linker-provided address for the start of the stack 
 // (which is a high address - stack goes top to bottom)
-extern void* _sstack;
+extern void _sstack(void);
 
 //*****************************************************************************
 //
@@ -122,7 +124,7 @@ extern void* _sstack;
 __attribute__ ((section(".isr_vector")))
 void (* const g_am_pfnVectors[])(void) =
 {
-    (void (*)(void))(&_sstack),             // The initial stack pointer (provided by linker script)
+    &_sstack,                               // The initial stack pointer (provided by linker script)
     Reset_Handler,                          // The reset handler
     NMI_Handler,                            // The NMI handler
     HardFault_Handler,                      // The hard fault handler
@@ -212,19 +214,6 @@ uint32_t const __Patchable[] =
 
 //*****************************************************************************
 //
-// The following are constructs created by the linker, indicating where the
-// the "data" and "bss" segments reside in memory.  The initializers for the
-// "data" segment resides immediately following the "text" segment.
-//
-//*****************************************************************************
-extern uint32_t _etext;
-extern uint32_t _sdata;
-extern uint32_t _edata;
-extern uint32_t _sbss;
-extern uint32_t _ebss;
-
-//*****************************************************************************
-//
 // This is the code that gets called when the processor first starts execution
 // following a reset event.  Only the absolutely necessary set is performed,
 // after which the application supplied entry() routine is called.
@@ -232,56 +221,38 @@ extern uint32_t _ebss;
 //*****************************************************************************
 #if defined(__GNUC_STDC_INLINE__)
 void
-Reset_Handler(void)
+_start(void)
 {
     //
     // Set the vector table pointer.
     //
-    __asm("    ldr    r0, =0xE000ED08\n"
-          "    ldr    r1, =g_am_pfnVectors\n"
-          "    str    r1, [r0]");
-
-    //
-    // Set the stack pointer.
-    //
-    __asm("    ldr    sp, [r1]");
+    uint32_t *const vector_offset = (uint32_t*)0xE000ED08;
+    *vector_offset = (uint32_t)&g_am_pfnVectors;
 
 #ifndef NOFPU
     //
     // Enable the FPU.
     //
-    __asm("ldr  r0, =0xE000ED88\n"
-          "ldr  r1,[r0]\n"
-          "orr  r1,#(0xF << 20)\n"
-          "str  r1,[r0]\n"
-          "dsb\n"
-          "isb\n");
+    uint32_t *const fpu_enable = (uint32_t*)0xE000ED88;
+    *fpu_enable = *fpu_enable | (0xF << 20);
+    __ISB();
+    __DSB();
 #endif
+
     //
     // Copy the data segment initializers from flash to SRAM.
     //
-    __asm("    ldr     r0, =_init_data\n"
-          "    ldr     r1, =_sdata\n"
-          "    ldr     r2, =_edata\n"
-          "copy_loop:\n"
-          "        cmp   r1, r2\n"
-          "        beq   copy_end\n"
-          "        ldr   r3, [r0], #4\n"
-          "        str   r3, [r1], #4\n"
-          "        b     copy_loop\n"
-          "copy_end:\n");
-    
+    extern char _init_data[];
+    extern char _sdata[];
+    extern char _edata[];
+    memcpy(_sdata, _init_data, _edata - _sdata);
+
     //
     // Zero fill the bss segment.
     //
-    __asm("    ldr     r0, =_sbss\n"
-          "    ldr     r1, =_ebss\n"
-          "    mov     r2, #0\n"
-          "zero_loop:\n"
-          "        cmp     r0, r1\n"
-          "        it      lt\n"
-          "        strlt   r2, [r0], #4\n"
-          "        blt     zero_loop");
+    extern char _sbss[];
+    extern char _ebss[];
+    memset(_sbss, 0, _ebss - _sbss);
 
     //
     // Call Global Static Constructors for C++ support
@@ -297,10 +268,15 @@ Reset_Handler(void)
     //
     main();
 
+    // FIXME should we call _exit and similar things?
+
     //
     // If main returns then execute a break point instruction
     //
-    __asm("    bkpt     ");
+    for(;;)
+    {
+        __asm__ volatile ("bkpt");
+    }
 }
 #else
 #error GNU STDC inline not supported.
