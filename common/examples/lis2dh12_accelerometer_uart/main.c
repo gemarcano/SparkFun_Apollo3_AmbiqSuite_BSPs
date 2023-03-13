@@ -60,7 +60,7 @@ int main( void ){
     // Board-agnostic setup
     am_hal_clkgen_control(AM_HAL_CLKGEN_CONTROL_SYSCLK_MAX, 0);
     am_hal_cachectrl_config(&am_hal_cachectrl_defaults);
-    am_hal_cachectrl_enable();  
+    am_hal_cachectrl_enable();
 
     // Board-specific setup
     am_bsp_low_power_init();
@@ -78,7 +78,7 @@ int main( void ){
 
     while(1){
 
-        
+
         lis2dh12_reg_t reg;
 
         // Check if accelerometer is ready with new temperature data
@@ -108,7 +108,7 @@ int main( void ){
         }
 
 
-        
+
 #ifdef LOOP_DELAY_MS
 #if LOOP_DELAY_MS
         am_util_delay_ms(LOOP_DELAY_MS);
@@ -118,7 +118,7 @@ int main( void ){
 
     // Disable debug
     am_bsp_debug_printf_disable();
-    
+
     // Go to Deep Sleep.
     am_hal_sysctrl_sleep(AM_HAL_SYSCTRL_SLEEP_DEEP);
 }
@@ -139,7 +139,7 @@ uint32_t initAccel( void ){
 
     retVal32 = am_hal_iom_power_ctrl((dev_if.iomHandle), AM_HAL_SYSCTRL_WAKE, false);
     if(retVal32 != AM_HAL_STATUS_SUCCESS){ return retVal32; }
-    
+
     retVal32 = am_hal_iom_configure((dev_if.iomHandle), &i2cConfig);
     if(retVal32 != AM_HAL_STATUS_SUCCESS){ return retVal32; }
 
@@ -158,7 +158,7 @@ uint32_t initAccel( void ){
     // Apply accelerometer configuration
     lis2dh12_device_id_get(&dev_ctx, &whoamI);
     if (whoamI != LIS2DH12_ID){
-        return AM_HAL_STATUS_FAIL; 
+        return AM_HAL_STATUS_FAIL;
     }
 
     am_util_stdio_printf("Whoami (should be 0x33): 0x%2x\n", whoamI);

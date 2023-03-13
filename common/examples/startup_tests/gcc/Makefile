@@ -4,24 +4,24 @@
 #
 # Copyright (c) 2019, Ambiq Micro
 # All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
-# 
+#
 # 1. Redistributions of source code must retain the above copyright notice,
 # this list of conditions and the following disclaimer.
-# 
+#
 # 2. Redistributions in binary form must reproduce the above copyright
 # notice, this list of conditions and the following disclaimer in the
 # documentation and/or other materials provided with the distribution.
-# 
+#
 # 3. Neither the name of the copyright holder nor the names of its
 # contributors may be used to endorse or promote products derived from this
 # software without specific prior written permission.
-# 
+#
 # Third party software included in this distribution is subject to the
 # additional license terms as defined in the /docs/licenses directory.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 # AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -40,7 +40,7 @@
 
 #******************************************************************************
 #
-# This is an example makefile for SparkFun Apollo3 boards as used in the 
+# This is an example makefile for SparkFun Apollo3 boards as used in the
 #   AmbiqSuite SDK.
 #
 # Recommended usage
@@ -51,14 +51,14 @@
 #
 # Filepaths
 #   You can relocate this makefile easily by providing the path to the root of
-#   the AmbiqSuite SDK. If that path is not specified then this file will 
-#   assume that it is located in 
+#   the AmbiqSuite SDK. If that path is not specified then this file will
+#   assume that it is located in
 #   <AmbiqSDKRoot>/boards/<your_board>/examples/<your_example>/gcc
 #   and use relative paths
 #
 # User Configuration
-#   You must also specify which COM_PORT to use if you want to use the 
-#   'bootlaoder' targets. 
+#   You must also specify which COM_PORT to use if you want to use the
+#   'bootlaoder' targets.
 #     Windows example: 	COM_PORT=COM4
 #     *nix example: 	COM_PORT=/dev/usbserialxxxx
 #
@@ -311,7 +311,7 @@ DEPS+= $(ZSRC:%.cc=$(CONFIG)/%.d)
 DEPS+= $(CSRC:%.c=$(CONFIG)/%.d)
 DEPS+= $(ASRC:%.s=$(CONFIG)/%.d)
 
-CSTD = -std=c99 
+CSTD = -std=c99
 
 CFLAGS = -mthumb -mcpu=$(CPU) -mfpu=$(FPU) -mfloat-abi=$(FABI)
 CFLAGS+= -ffunction-sections -fdata-sections
@@ -319,7 +319,7 @@ CFLAGS+= -MMD -MP -Wall -g
 CFLAGS+= -O0
 CFLAGS+= $(DEFINES)
 CFLAGS+= $(INCLUDES)
-CFLAGS+= 
+CFLAGS+=
 
 XSTD   = -std=gnu++11
 
@@ -330,7 +330,7 @@ LFLAGS = -mthumb -mcpu=$(CPU) -mfpu=$(FPU) -mfloat-abi=$(FABI)
 LFLAGS+= -nostartfiles -static
 LFLAGS+= -Wl,--gc-sections,--entry,Reset_Handler,-Map,$(CONFIG)/$(TARGET).map
 LFLAGS+= -Wl,--start-group -lm -lc -lgcc $(LIBS) -Wl,--end-group
-LFLAGS+= 
+LFLAGS+=
 
 # Additional user specified CFLAGS
 CFLAGS+=$(EXTRA_CFLAGS)
@@ -383,7 +383,7 @@ $(CONFIG)/$(TARGET)_%.bin: $(CONFIG)/$(TARGET)_%.axf
 	$(OD) $(ODFLAGS) $< > $(CONFIG)/$(TARGET).lst
 
 bootload_asb: directories $(CONFIG)/$(TARGET)_asb.bin
-	$(ASB_UPLOADER) --bin $(CONFIG)/$(TARGET)_asb.bin --load-address-blob 0x20000 --magic-num 0xCB -o $(CONFIG)/$(TARGET) --version 0x0 --load-address-wired 0xC000 -i 6 --options 0x1 -b $(ASB_UPLOAD_BAUD) -port $(COM_PORT) -r 2 -v 
+	$(ASB_UPLOADER) --bin $(CONFIG)/$(TARGET)_asb.bin --load-address-blob 0x20000 --magic-num 0xCB -o $(CONFIG)/$(TARGET) --version 0x0 --load-address-wired 0xC000 -i 6 --options 0x1 -b $(ASB_UPLOAD_BAUD) -port $(COM_PORT) -r 2 -v
 
 bootload_svl: directories $(CONFIG)/$(TARGET)_svl.bin
 	$(SVL_UPLOADER) $(COM_PORT) -f $(CONFIG)/$(TARGET)_svl.bin -b $(SVL_UPLOAD_BAUD) -v

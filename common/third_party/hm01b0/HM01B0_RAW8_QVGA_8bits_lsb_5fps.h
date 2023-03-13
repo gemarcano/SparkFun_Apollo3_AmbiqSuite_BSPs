@@ -19,7 +19,7 @@ const hm_script_t sHM01B0InitScript[] =
 // ; $Revision: 1338 $
 // ; $Date:: 2017-04-11 15:43:45 +0800#$
 // ;*************************************************************************
-// 
+//
 // // ---------------------------------------------------
 // // HUB system initial
 // // ---------------------------------------------------
@@ -39,8 +39,8 @@ const hm_script_t sHM01B0InitScript[] =
 // W 20 0121 01 2 1 ; [0] Q1 Intf enable, [1]:4bit mode, [2] msb first, [3] serial mode
 // W 20 0150 00 2 1 ;
 // W 20 0150 04 2 1 ;
-// 
-// 
+//
+//
 // //---------------------------------------------------
 // // Initial
 // //---------------------------------------------------
@@ -48,9 +48,9 @@ const hm_script_t sHM01B0InitScript[] =
     {0x0103, 0x00,},
 // W 24 0100 00 2 1; power up
     {0x0100, 0x00,},
-// 
-// 
-// 
+//
+//
+//
 // //---------------------------------------------------
 // // Analog
 // //---------------------------------------------------
@@ -72,12 +72,12 @@ const hm_script_t sHM01B0InitScript[] =
     {0x3059, 0x1E,},
     {0x3064, 0x00,},
     {0x3065, 0x04,},
-// 
-// 
+//
+//
 // //---------------------------------------------------
 // // Digital function
 // //---------------------------------------------------
-// 
+//
 // // BLC
 // W 24 1000 43 2 1 ; BLC_on, IIR
     {0x1000, 0x43,},
@@ -85,15 +85,15 @@ const hm_script_t sHM01B0InitScript[] =
     {0x1001, 0x40,},
 // W 24 1002 32 2 1 ; // blc_darkpixel_thd
     {0x1002, 0x32,},
-// 
+//
 // // Dgain
 // W 24 0350 7F 2 1 ; Dgain Control
     {0x0350, 0x7F,},
-// 
+//
 // // BLI
 // W 24 1006 01 2 1 ; [0] : bli enable
     {0x1006, 0x01,},
-// 
+//
 // // DPC
 // W 24 1008 00 2 1 ; [2:0] : DPC option 0: DPC off 1 : mono 3 : bayer1 5 : bayer2
     {0x1008, 0x00,},
@@ -111,7 +111,7 @@ const hm_script_t sHM01B0InitScript[] =
 // W 24 1012 00 2 1 ; Sync. enable VSYNC shift
     {0x1012, 0x01,},
 
-// 
+//
 // // ROI Statistic
 // W 24 2000 07 2 1 ; [0] : AE stat en [1] : MD LROI stat en [2] : MD GROI stat en [3] : RGB stat ratio en [4] : IIR selection (1 -> 16, 0 -> 8)
     {0x2000, 0x07,},
@@ -131,7 +131,7 @@ const hm_script_t sHM01B0InitScript[] =
     {0x200F, 0x00,},
 // W 24 2010 B8 2 1 ; MD GROI 3 y start LB
     {0x2010, 0xB8,},
-// 
+//
 // W 24 2013 00 2 1 ; MD LRIO y start HB
     {0x2013, 0x00,},
 // W 24 2014 58 2 1 ; MD LROI y start LB
@@ -140,7 +140,7 @@ const hm_script_t sHM01B0InitScript[] =
     {0x2017, 0x00,},
 // W 24 2018 9B 2 1 ; MD LROI y end LB
     {0x2018, 0x9B,},
-// 
+//
 // // AE
 // W 24 2100 01 2 1 ; [0]: AE control enable
     {0x2100, 0x01,},
@@ -164,13 +164,13 @@ const hm_script_t sHM01B0InitScript[] =
     {0x2111, 0x00,},
 // W 24 2112 A0 2 1 ; FS 50Hz Lb
     {0x2112, 0xA0,},
-// 
-// 
+//
+//
 // // MD
 // W 24 2150 03 2 1 ; [0] : MD LROI en [1] : MD GROI en
     {0x2150, 0x03,},
-// 
-// 
+//
+//
 // //---------------------------------------------------
 // // frame rate : 5 FPS
 // //---------------------------------------------------
@@ -178,56 +178,56 @@ const hm_script_t sHM01B0InitScript[] =
     {0x0340, 0x0C,},
 // W 24 0341 7A 2 1 ; smia frame length Lb 3192
     {0x0341, 0x7A,},
-// 
+//
 // W 24 0342 01 2 1 ; smia line length Hb
     {0x0342, 0x01,},
 // W 24 0343 77 2 1 ; smia line length Lb 375
     {0x0343, 0x77,},
-// 
+//
 // //---------------------------------------------------
 // // Resolution : QVGA 324x244
 // //---------------------------------------------------
 // W 24 3010 01 2 1 ; [0] : window mode 0 : full frame 324x324 1 : QVGA
     {0x3010, 0x01,},
-// 
-// 
+//
+//
 // W 24 0383 01 2 1 ;
     {0x0383, 0x01,},
 // W 24 0387 01 2 1 ;
     {0x0387, 0x01,},
 // W 24 0390 00 2 1 ;
     {0x0390, 0x00,},
-// 
+//
 // //---------------------------------------------------
 // // bit width Selection
 // //---------------------------------------------------
 // W 24 3011 70 2 1 ; [0] : 6 bit mode enable
     {0x3011, 0x70,},
-// 
-// 
+//
+//
 // W 24 3059 02 2 1 ; [7]: Self OSC En, [6]: 4bit mode, [5]: serial mode, [4:0]: keep value as 0x02
     {0x3059, 0x02,},
 // W 24 3060 01 2 1 ; [5]: gated_clock, [4]: msb first,
     {0x3060, 0x20,},
 // ; [3:2]: vt_reg_div -> div by 4/8/1/2
 // ; [1;0]: vt_sys_div -> div by 8/4/2/1
-// 
-// 
+//
+//
     {0x0101, 0x01,},
 // //---------------------------------------------------
 // // CMU update
 // //---------------------------------------------------
-// 
+//
 // W 24 0104 01 2 1 ; was 0100
     {0x0104, 0x01,},
-// 
-// 
-// 
+//
+//
+//
 // //---------------------------------------------------
 // // Turn on rolling shutter
 // //---------------------------------------------------
 // W 24 0100 01 2 1 ; was 0005 ; mode_select 00 : standby - wait fir I2C SW trigger 01 : streaming 03 : output "N" frame, then enter standby 04 : standby - wait for HW trigger (level), then continuous video out til HW TRIG goes off 06 : standby - wait for HW trigger (edge), then output "N" frames then enter standby
     {0x0100, 0x00,},
-// 
+//
 // ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 };

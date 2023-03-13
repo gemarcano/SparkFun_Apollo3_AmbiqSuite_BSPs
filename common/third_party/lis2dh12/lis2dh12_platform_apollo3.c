@@ -114,6 +114,6 @@ int32_t lis2dh12_read_platform_apollo3(void *handle, uint8_t reg, uint8_t *bufp,
     retVal32 = am_hal_iom_blocking_transfer(pif->iomHandle, &iomTransfer);
 
     if( retVal32 != AM_HAL_STATUS_SUCCESS ){ return retVal32; }
-    
+
     return 0;
 }
