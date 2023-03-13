@@ -143,7 +143,7 @@ uint32_t hm01b0_load_script(hm01b0_cfg_t *psCfg, hm_script_t *psScript, uint32_t
         }
     }
 
-    return ui32Err;   
+    return ui32Err;
 }
 
 //*****************************************************************************
@@ -212,9 +212,9 @@ void hm01b0_mclk_enable(hm01b0_cfg_t *psCfg)
     //
     // Set the pattern in the CMPR registers.
     //
-    am_hal_ctimer_compare_set(psCfg->ui32CTimerModule, psCfg->ui32CTimerSegment, 0, 
+    am_hal_ctimer_compare_set(psCfg->ui32CTimerModule, psCfg->ui32CTimerSegment, 0,
                             (uint32_t)(MCLK_UI64PATTERN & 0xFFFF));
-    am_hal_ctimer_compare_set(psCfg->ui32CTimerModule, psCfg->ui32CTimerSegment, 1, 
+    am_hal_ctimer_compare_set(psCfg->ui32CTimerModule, psCfg->ui32CTimerSegment, 1,
                             (uint32_t)((MCLK_UI64PATTERN >> 16) & 0xFFFF));
 
     //
@@ -233,8 +233,8 @@ void hm01b0_mclk_enable(hm01b0_cfg_t *psCfg)
     //
     am_hal_ctimer_output_config(psCfg->ui32CTimerModule,
                                 psCfg->ui32CTimerSegment,
-                                psCfg->ui32CTimerOutputPin, 
-                                AM_HAL_CTIMER_OUTPUT_NORMAL, 
+                                psCfg->ui32CTimerOutputPin,
+                                AM_HAL_CTIMER_OUTPUT_NORMAL,
                                 AM_HAL_GPIO_PIN_DRIVESTRENGTH_12MA);
 
     //

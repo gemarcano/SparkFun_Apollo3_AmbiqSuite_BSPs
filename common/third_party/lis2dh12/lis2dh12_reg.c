@@ -327,7 +327,7 @@ int32_t lis2dh12_operating_mode_set(lis2dh12_ctx_t *ctx, lis2dh12_op_md_t val)
   if (ret == 0) {
     ret = lis2dh12_read_reg(ctx, LIS2DH12_CTRL_REG4,
                             (uint8_t*)&ctrl_reg4, 1);
-  } 
+  }
   if (ret == 0) {
     if ( val == LIS2DH12_HR_12bit ) {
       ctrl_reg1.lpen = 0;
@@ -342,7 +342,7 @@ int32_t lis2dh12_operating_mode_set(lis2dh12_ctx_t *ctx, lis2dh12_op_md_t val)
       ctrl_reg4.hr   = 0;
     }
     ret = lis2dh12_write_reg(ctx, LIS2DH12_CTRL_REG1, (uint8_t*)&ctrl_reg1, 1);
-  } 
+  }
   if (ret == 0) {
     ret = lis2dh12_write_reg(ctx, LIS2DH12_CTRL_REG4, (uint8_t*)&ctrl_reg4, 1);
   }
@@ -368,7 +368,7 @@ int32_t lis2dh12_operating_mode_get(lis2dh12_ctx_t *ctx, lis2dh12_op_md_t *val)
     ret = lis2dh12_read_reg(ctx, LIS2DH12_CTRL_REG4, (uint8_t*)&ctrl_reg4, 1);
     if ( ctrl_reg1.lpen == PROPERTY_ENABLE ) {
       *val = LIS2DH12_LP_8bit;
-    } 
+    }
     if (ctrl_reg4.hr == PROPERTY_ENABLE ) {
       *val = LIS2DH12_HR_12bit;
     } else {

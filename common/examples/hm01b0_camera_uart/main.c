@@ -211,7 +211,7 @@ int main(void)
     hm01b0_get_modelid(&s_HM01B0Cfg, &ui16ModelId);
 
     am_util_stdio_printf("HM01B0 Model ID 0x%04X\n", ui16ModelId);
-      
+
     hm01b0_init_system(&s_HM01B0Cfg, (hm_script_t *)sHM01B0InitScript, sizeof(sHM01B0InitScript)/sizeof(hm_script_t));
 
 #ifdef DEMO_HM01B0_TEST_MODE_ENABLE

@@ -32,7 +32,7 @@ SOFTWARE.
 
 typedef struct _lis2dh12_platform_apollo3_if_t {
     void*       iomHandle;          // IO Master instance
-    uint8_t     addCS;              // I2C mode: the 7-bit I2C address (either 0x18 or 0x19 depeding on SA0 pin)  
+    uint8_t     addCS;              // I2C mode: the 7-bit I2C address (either 0x18 or 0x19 depeding on SA0 pin)
                                     // SPI mode: the Apollo3 pad to use for chip select
     bool        useSPI;             // Set 'true' if using SPI mode, else 'false'
 }lis2dh12_platform_apollo3_if_t;
@@ -43,5 +43,5 @@ int32_t lis2dh12_read_platform_apollo3(void *handle, uint8_t reg, uint8_t *bufp,
 #ifdef __cplusplus
 }
 #endif
-      
+
 #endif // _LIS2DH12_PLATFORM_APOLLO3_H_

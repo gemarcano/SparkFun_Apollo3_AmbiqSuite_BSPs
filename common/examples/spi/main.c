@@ -48,10 +48,10 @@ void init_iom( void ){
     status = am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM2_MISO, g_AM_BSP_GPIO_IOM2_MISO);
     if(status != AM_HAL_STATUS_SUCCESS){ report(status); }
 
-    status = am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM2_MOSI, g_AM_BSP_GPIO_IOM2_MOSI); 
+    status = am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM2_MOSI, g_AM_BSP_GPIO_IOM2_MOSI);
     if(status != AM_HAL_STATUS_SUCCESS){ report(status); }
 
-    status = am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM2_SCK, g_AM_BSP_GPIO_IOM2_SCK); 
+    status = am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM2_SCK, g_AM_BSP_GPIO_IOM2_SCK);
     if(status != AM_HAL_STATUS_SUCCESS){ report(status); }\
 }
 

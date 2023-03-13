@@ -141,7 +141,7 @@ main(void)
         case AM_HAL_STATUS_SUCCESS : stat_msg = "success"; break;
         case AM_HAL_IOM_ERR_I2C_NAK : stat_msg = "NAK"; break;
         case AM_HAL_IOM_ERR_I2C_ARB : stat_msg = "ARB"; break;
-        
+
         default:
             stat_msg = "UNKNOWN ERROR";
             break;
