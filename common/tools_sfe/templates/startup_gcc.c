@@ -221,7 +221,7 @@ uint32_t const __Patchable[] =
 //*****************************************************************************
 #if defined(__GNUC_STDC_INLINE__)
 void
-_start(void)
+Reset_Handler2(void)
 {
     //
     // Set the vector table pointer.
@@ -270,13 +270,7 @@ _start(void)
 
     // FIXME should we call _exit and similar things?
 
-    //
-    // If main returns then execute a break point instruction
-    //
-    for(;;)
-    {
-        __asm__ volatile ("bkpt");
-    }
+    // startup_gcc.S calls bkpt on a loop once we return, so just return
 }
 #else
 #error GNU STDC inline not supported.

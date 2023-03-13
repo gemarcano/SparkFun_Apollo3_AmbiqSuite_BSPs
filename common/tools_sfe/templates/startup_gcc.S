@@ -1,7 +1,7 @@
 .syntax unified
 .arch armv7e-m
 
-.global Reset_Handler, _start
+.global Reset_Handler, Reset_Handler2
 
 .text
 .thumb
@@ -11,5 +11,8 @@
 .type Reset_Handler, function
 Reset_Handler:
 	ldr sp, =_sstack
-	b _start
+	blx Reset_Handler2
+Reset_Handler_hang:
+	bkpt
+	b Reset_Handler_hang
 .endfunc
