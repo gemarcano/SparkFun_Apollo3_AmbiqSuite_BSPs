@@ -211,10 +211,11 @@ extern am_bsp_uart_pwrsave_t am_bsp_uart_pwrsave[AM_REG_UART_NUM_MODULES];
 //
 //*****************************************************************************
 extern void am_bsp_low_power_init(void);
+extern void am_bsp_ble_3p3v_low_power_mode(void);
 extern void am_bsp_iom_pins_enable(uint32_t ui32Module, am_hal_iom_mode_e eIOMMode);
 extern void am_bsp_iom_pins_disable(uint32_t ui32Module, am_hal_iom_mode_e eIOMMode);
-extern void am_bsp_mspi_pins_enable(am_hal_mspi_device_e eMSPIDevice);
-extern void am_bsp_mspi_pins_disable(am_hal_mspi_device_e eMSPIDevice);
+extern void am_bsp_mspi_pins_enable(uint32_t ui32Module, am_hal_mspi_device_e eMSPIDevice);
+extern void am_bsp_mspi_pins_disable(uint32_t ui32Module, am_hal_mspi_device_e eMSPIDevice);
 
 extern void am_bsp_ios_pins_enable(uint32_t ui32Module, uint32_t ui32IOSMode);   // SparkFun Edge does not expose IO Slave Clock signal, so hiding these functions
 extern void am_bsp_ios_pins_disable(uint32_t ui32Module, uint32_t ui32IOSMode);
