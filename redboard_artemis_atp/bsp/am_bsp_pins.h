@@ -113,6 +113,24 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS;
 
 //*****************************************************************************
 //
+//  IOM0_CS1 pin: I/O Master 0 chip select.
+//
+//*****************************************************************************
+#define AM_BSP_GPIO_IOM0_CS1             	17
+extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS1;
+#define AM_BSP_IOM0_CS1_CHNL             1
+
+//*****************************************************************************
+//
+//  IOM0_CS2 pin: I/O Master 0 chip select.
+//
+//*****************************************************************************
+#define AM_BSP_GPIO_IOM0_CS2             	14
+extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS2;
+#define AM_BSP_IOM0_CS2_CHNL             2
+
+//*****************************************************************************
+//
 //  IOM0_CS3 pin: I/O Master 0 chip select.
 //
 //*****************************************************************************
@@ -165,7 +183,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SDA;
 //  IOM1_CS pin: I/O Master 1 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_CS             	14
+#define AM_BSP_GPIO_IOM1_CS             	18
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_CS;
 #define AM_BSP_IOM1_CS_CHNL             2
 
@@ -214,7 +232,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SDA;
 //  IOM2_CS pin: I/O Master 2 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_CS             	15
+#define AM_BSP_GPIO_IOM2_CS             	34
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_CS;
 #define AM_BSP_IOM2_CS_CHNL             3
 

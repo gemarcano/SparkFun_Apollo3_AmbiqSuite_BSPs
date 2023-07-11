@@ -394,6 +394,9 @@ am_bsp_iom_pins_enable(uint32_t ui32Module, am_hal_iom_mode_e eIOMMode)
             am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_MISO, g_AM_BSP_GPIO_IOM0_MISO);
             am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_MOSI, g_AM_BSP_GPIO_IOM0_MOSI);
             am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_CS,   g_AM_BSP_GPIO_IOM0_CS);
+            am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_CS1,  g_AM_BSP_GPIO_IOM0_CS1);
+            am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_CS2,  g_AM_BSP_GPIO_IOM0_CS2);
+            am_hal_gpio_pinconfig(AM_BSP_GPIO_IOM0_CS3,  g_AM_BSP_GPIO_IOM0_CS3);
             break;
 
         case ((1 << 2) | AM_HAL_IOM_SPI_MODE):

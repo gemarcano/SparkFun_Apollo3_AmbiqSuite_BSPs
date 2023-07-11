@@ -123,6 +123,40 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS =
 
 //*****************************************************************************
 //
+//  IOM0_CS1 pin: I/O Master 0 chip select.
+//
+//*****************************************************************************
+const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS1 =
+{
+    .uFuncSel            = AM_HAL_PIN_17_NCE17,
+    .eDriveStrength      = AM_HAL_GPIO_PIN_DRIVESTRENGTH_12MA,
+    .eGPOutcfg           = AM_HAL_GPIO_PIN_OUTCFG_PUSHPULL,
+    .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
+    .eIntDir             = AM_HAL_GPIO_PIN_INTDIR_LO2HI,
+    .uIOMnum             = 0,
+    .uNCE                = 0,
+    .eCEpol              = AM_HAL_GPIO_PIN_CEPOL_ACTIVELOW
+};
+
+//*****************************************************************************
+//
+//  IOM0_CS2 pin: I/O Master 0 chip select.
+//
+//*****************************************************************************
+const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS2 =
+{
+    .uFuncSel            = AM_HAL_PIN_14_NCE14,
+    .eDriveStrength      = AM_HAL_GPIO_PIN_DRIVESTRENGTH_12MA,
+    .eGPOutcfg           = AM_HAL_GPIO_PIN_OUTCFG_PUSHPULL,
+    .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
+    .eIntDir             = AM_HAL_GPIO_PIN_INTDIR_LO2HI,
+    .uIOMnum             = 0,
+    .uNCE                = 0,
+    .eCEpol              = AM_HAL_GPIO_PIN_CEPOL_ACTIVELOW
+};
+
+//*****************************************************************************
+//
 //  IOM0_CS3 pin: I/O Master 0 chip select.
 //
 //*****************************************************************************
@@ -208,7 +242,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_SDA =
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM1_CS =
 {
-    .uFuncSel            = AM_HAL_PIN_14_NCE14,
+    .uFuncSel            = AM_HAL_PIN_18_NCE18,
     .eDriveStrength      = AM_HAL_GPIO_PIN_DRIVESTRENGTH_12MA,
     .eGPOutcfg           = AM_HAL_GPIO_PIN_OUTCFG_PUSHPULL,
     .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
@@ -288,7 +322,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM1_SDA =
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM2_CS =
 {
-    .uFuncSel            = AM_HAL_PIN_15_NCE15,
+    .uFuncSel            = AM_HAL_PIN_34_NCE34,
     .eDriveStrength      = AM_HAL_GPIO_PIN_DRIVESTRENGTH_12MA,
     .eGPOutcfg           = AM_HAL_GPIO_PIN_OUTCFG_PUSHPULL,
     .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
