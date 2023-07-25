@@ -134,7 +134,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS1 =
     .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
     .eIntDir             = AM_HAL_GPIO_PIN_INTDIR_LO2HI,
     .uIOMnum             = 0,
-    .uNCE                = 0,
+    .uNCE                = 1,
     .eCEpol              = AM_HAL_GPIO_PIN_CEPOL_ACTIVELOW
 };
 
@@ -151,7 +151,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS2 =
     .eGPInput            = AM_HAL_GPIO_PIN_INPUT_NONE,
     .eIntDir             = AM_HAL_GPIO_PIN_INTDIR_LO2HI,
     .uIOMnum             = 0,
-    .uNCE                = 0,
+    .uNCE                = 2,
     .eCEpol              = AM_HAL_GPIO_PIN_CEPOL_ACTIVELOW
 };
 

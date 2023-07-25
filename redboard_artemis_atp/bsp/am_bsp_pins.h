@@ -118,7 +118,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS;
 //*****************************************************************************
 #define AM_BSP_GPIO_IOM0_CS1             	17
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS1;
-#define AM_BSP_IOM0_CS1_CHNL             0
+#define AM_BSP_IOM0_CS1_CHNL             1
 
 //*****************************************************************************
 //
@@ -127,7 +127,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS1;
 //*****************************************************************************
 #define AM_BSP_GPIO_IOM0_CS2             	14
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS2;
-#define AM_BSP_IOM0_CS2_CHNL             0
+#define AM_BSP_IOM0_CS2_CHNL             2
 
 //*****************************************************************************
 //
