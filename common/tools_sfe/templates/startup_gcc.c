@@ -257,16 +257,17 @@ Reset_Handler2(void)
     //
     // Call Global Static Constructors for C++ support
     //
-    extern void (*__init_array_start)(void);    // symbols must be
-    extern void (*__init_array_end)(void);      // provided by linker
-    for (void (**p)() = &__init_array_start; p < &__init_array_end; ++p) {
-        (*p)();                                 // Call each function in the list
-    }
+	extern void __libc_init_array(void);
+	__libc_init_array();
 
     //
     // Call the application's entry point.
     //
     main();
+
+	// Call destructors
+	extern void __libc_fini_array(void);
+	__libc_fini_array();
 
     // FIXME should we call _exit and similar things?
 
