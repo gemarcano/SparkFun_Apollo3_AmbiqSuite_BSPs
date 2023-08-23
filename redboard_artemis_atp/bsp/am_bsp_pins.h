@@ -104,6 +104,22 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART_RX;
 
 //*****************************************************************************
 //
+//  COM_UART1_TX pin: This pin is the COM_UART transmit pin.
+//
+//*****************************************************************************
+#define AM_BSP_GPIO_COM_UART1_TX         	24
+extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART1_TX;
+
+//*****************************************************************************
+//
+//  COM_UART1_RX pin: This pin is the COM_UART receive pin.
+//
+//*****************************************************************************
+#define AM_BSP_GPIO_COM_UART1_RX         	25
+extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART1_RX;
+
+//*****************************************************************************
+//
 //  IOM0_CS pin: I/O Master 0 chip select.
 //
 //*****************************************************************************
