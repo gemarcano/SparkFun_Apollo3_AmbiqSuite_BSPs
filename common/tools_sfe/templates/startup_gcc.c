@@ -53,7 +53,7 @@
 // Forward declaration of interrupt handlers.
 //
 //*****************************************************************************
-extern void Reset_Handler(void);
+extern void Reset_Handler(void)       __attribute ((weak));
 extern void NMI_Handler(void)         __attribute ((weak));
 extern void HardFault_Handler(void)   __attribute ((weak));
 extern void MemManage_Handler(void)   __attribute ((weak, alias ("HardFault_Handler")));
@@ -220,6 +220,7 @@ uint32_t const __Patchable[] =
 //
 //*****************************************************************************
 #if defined(__GNUC_STDC_INLINE__)
+ __attribute((weak))
 void
 Reset_Handler2(void)
 {

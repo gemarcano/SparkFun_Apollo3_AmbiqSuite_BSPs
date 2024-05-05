@@ -12,7 +12,7 @@
 Reset_Handler:
 	ldr sp, =_sstack
 	blx Reset_Handler2
-Reset_Handler_hang:
+0:
 	bkpt
-	b Reset_Handler_hang
+	b 0b
 .endfunc
