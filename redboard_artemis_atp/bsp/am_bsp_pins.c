@@ -117,7 +117,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_COM_UART1_TX =
 
 //*****************************************************************************
 //
-//  COM_UART_RX pin: This pin is the COM_UART1 receive pin.
+//  COM_UART1_RX pin: This pin is the COM_UART1 receive pin.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_COM_UART1_RX =
@@ -127,7 +127,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_COM_UART1_RX =
 
 //*****************************************************************************
 //
-//  IOM0_CS pin: I/O Master 0 chip select.
+//  IOM0_CS pin: I/O Master 0 chip select 0.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS =
@@ -144,7 +144,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS =
 
 //*****************************************************************************
 //
-//  IOM0_CS1 pin: I/O Master 0 chip select.
+//  IOM0_CS1 pin: I/O Master 0 chip select 1.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS1 =
@@ -161,7 +161,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS1 =
 
 //*****************************************************************************
 //
-//  IOM0_CS2 pin: I/O Master 0 chip select.
+//  IOM0_CS2 pin: I/O Master 0 chip select 2.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS2 =
@@ -178,7 +178,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS2 =
 
 //*****************************************************************************
 //
-//  IOM0_CS3 pin: I/O Master 0 chip select.
+//  IOM0_CS3 pin: I/O Master 0 chip select 3.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_CS3 =
@@ -258,7 +258,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM0_SDA =
 
 //*****************************************************************************
 //
-//  IOM1_CS pin: I/O Master 1 chip select.
+//  IOM1_CS pin: I/O Master 1 chip select 0.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM1_CS =
@@ -275,7 +275,7 @@ const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM1_CS =
 
 //*****************************************************************************
 //
-//  IOM1_CS2 pin: I/O Master 1 chip select.
+//  IOM1_CS2 pin: I/O Master 1 chip select 2.
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AM_BSP_GPIO_IOM1_CS2 =

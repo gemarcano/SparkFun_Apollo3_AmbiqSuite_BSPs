@@ -112,13 +112,28 @@ pin
     pinnum          = 49
     func_sel        = AM_HAL_PIN_49_UART0RX
 
+# *****************************************************************************
+#  COM UART pins (UART1).
+# *****************************************************************************
+pin
+    name            = COM_UART1_TX
+    desc            = This pin is the COM_UART1 transmit pin.
+    pinnum          = 24
+    func_sel        = AM_HAL_PIN_24_UART1TX
+    drvstrength     = 2
+
+pin
+    name            = COM_UART1_RX
+    desc            = This pin is the COM_UART1 receive pin.
+    pinnum          = 25
+    func_sel        = AM_HAL_PIN_25_UART1RX
 
 # *****************************************************************************
 #  IOM0 pins.
 # *****************************************************************************
 pin
     name            = IOM0_CS
-    desc            = I/O Master 0 chip select.
+    desc            = I/O Master 0 chip select 0.
     pinnum          = 11
     func_sel        = AM_HAL_PIN_11_NCE11
     drvstrength     = 12
@@ -130,8 +145,34 @@ pin
     CEpol           = low
 
 pin
+    name            = IOM0_CS1
+    desc            = I/O Master 0 chip select 1.
+    pinnum          = 17
+    func_sel        = AM_HAL_PIN_17_NCE17
+    drvstrength     = 12
+    intdir          = lo2hi
+    GPOutcfg        = pushpull
+    GPinput         = false
+    IOMnum          = 0
+    CEnum           = 1
+    CEpol           = low
+
+pin
+    name            = IOM0_CS2
+    desc            = I/O Master 0 chip select 2.
+    pinnum          = 14
+    func_sel        = AM_HAL_PIN_14_NCE14
+    drvstrength     = 12
+    intdir          = lo2hi
+    GPOutcfg        = pushpull
+    GPinput         = false
+    IOMnum          = 0
+    CEnum           = 2
+    CEpol           = low
+
+pin
     name            = IOM0_CS3
-    desc            = I/O Master 0 chip select.
+    desc            = I/O Master 0 chip select 3.
     pinnum          = 15
     func_sel        = AM_HAL_PIN_15_NCE15
     drvstrength     = 12
@@ -190,9 +231,22 @@ pin
 # *****************************************************************************
 pin
     name            = IOM1_CS
-    desc            = I/O Master 1 chip select.
-    pinnum          = 14
-    func_sel        = AM_HAL_PIN_14_NCE14
+    desc            = I/O Master 1 chip select 0.
+    pinnum          = 23
+    func_sel        = AM_HAL_PIN_23_NCE23
+    drvstrength     = 12
+    intdir          = lo2hi
+    GPOutcfg        = pushpull
+    GPinput         = false
+    IOMnum          = 1
+    CEnum           = 0
+    CEpol           = low
+
+pin
+    name            = IOM1_CS2
+    desc            = I/O Master 1 chip select 2.
+    pinnum          = 18
+    func_sel        = AM_HAL_PIN_18_NCE18
     drvstrength     = 12
     intdir          = lo2hi
     GPOutcfg        = pushpull
@@ -250,8 +304,8 @@ pin
 pin
     name            = IOM2_CS
     desc            = I/O Master 2 chip select.
-    pinnum          = 15
-    func_sel        = AM_HAL_PIN_15_NCE15
+    pinnum          = 34
+    func_sel        = AM_HAL_PIN_34_NCE34
     drvstrength     = 12
     intdir          = lo2hi
     GPOutcfg        = pushpull

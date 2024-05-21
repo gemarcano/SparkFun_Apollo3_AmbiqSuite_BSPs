@@ -67,7 +67,7 @@ extern "C"
 //  LED_BLUE pin: The BLUE LED labelled 5.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_LED_BLUE            	5
+#define AM_BSP_GPIO_LED_BLUE            5
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_LED_BLUE;
 
 //*****************************************************************************
@@ -75,7 +75,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_LED_BLUE;
 //  MIC_DATA pin: Data line for PDM microphones.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MIC_DATA            	36
+#define AM_BSP_GPIO_MIC_DATA            36
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MIC_DATA;
 
 //*****************************************************************************
@@ -83,7 +83,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MIC_DATA;
 //  MIC_CLK pin: Clock line for PDM microphones.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MIC_CLK             	37
+#define AM_BSP_GPIO_MIC_CLK             37
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MIC_CLK;
 
 //*****************************************************************************
@@ -91,7 +91,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MIC_CLK;
 //  COM_UART_TX pin: This pin is the COM_UART transmit pin.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_COM_UART_TX         	48
+#define AM_BSP_GPIO_COM_UART_TX         48
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART_TX;
 
 //*****************************************************************************
@@ -99,58 +99,58 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART_TX;
 //  COM_UART_RX pin: This pin is the COM_UART receive pin.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_COM_UART_RX         	49
+#define AM_BSP_GPIO_COM_UART_RX         49
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART_RX;
 
 //*****************************************************************************
 //
-//  COM_UART1_TX pin: This pin is the COM_UART transmit pin.
+//  COM_UART1_TX pin: This pin is the COM_UART1 transmit pin.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_COM_UART1_TX         	24
+#define AM_BSP_GPIO_COM_UART1_TX        24
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART1_TX;
 
 //*****************************************************************************
 //
-//  COM_UART1_RX pin: This pin is the COM_UART receive pin.
+//  COM_UART1_RX pin: This pin is the COM_UART1 receive pin.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_COM_UART1_RX         	25
+#define AM_BSP_GPIO_COM_UART1_RX        25
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_COM_UART1_RX;
 
 //*****************************************************************************
 //
-//  IOM0_CS pin: I/O Master 0 chip select.
+//  IOM0_CS pin: I/O Master 0 chip select 0.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_CS             	11
+#define AM_BSP_GPIO_IOM0_CS             11
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS;
 #define AM_BSP_IOM0_CS_CHNL             0
 
 //*****************************************************************************
 //
-//  IOM0_CS1 pin: I/O Master 0 chip select.
+//  IOM0_CS1 pin: I/O Master 0 chip select 1.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_CS1             	17
+#define AM_BSP_GPIO_IOM0_CS1            17
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS1;
-#define AM_BSP_IOM0_CS1_CHNL             1
+#define AM_BSP_IOM0_CS1_CHNL            1
 
 //*****************************************************************************
 //
-//  IOM0_CS2 pin: I/O Master 0 chip select.
+//  IOM0_CS2 pin: I/O Master 0 chip select 2.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_CS2             	14
+#define AM_BSP_GPIO_IOM0_CS2            14
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS2;
-#define AM_BSP_IOM0_CS2_CHNL             2
+#define AM_BSP_IOM0_CS2_CHNL            2
 
 //*****************************************************************************
 //
-//  IOM0_CS3 pin: I/O Master 0 chip select.
+//  IOM0_CS3 pin: I/O Master 0 chip select 3.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_CS3            	15
+#define AM_BSP_GPIO_IOM0_CS3            15
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS3;
 #define AM_BSP_IOM0_CS3_CHNL            3
 
@@ -159,7 +159,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_CS3;
 //  IOM0_MISO pin: I/O Master 0 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_MISO           	6
+#define AM_BSP_GPIO_IOM0_MISO           6
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_MISO;
 
 //*****************************************************************************
@@ -167,7 +167,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_MISO;
 //  IOM0_MOSI pin: I/O Master 0 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_MOSI           	7
+#define AM_BSP_GPIO_IOM0_MOSI           7
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_MOSI;
 
 //*****************************************************************************
@@ -175,7 +175,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_MOSI;
 //  IOM0_SCK pin: I/O Master 0 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_SCK            	5
+#define AM_BSP_GPIO_IOM0_SCK            5
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SCK;
 
 //*****************************************************************************
@@ -183,7 +183,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SCK;
 //  IOM0_SCL pin: I/O Master 0 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_SCL            	5
+#define AM_BSP_GPIO_IOM0_SCL            5
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SCL;
 
 //*****************************************************************************
@@ -191,33 +191,33 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SCL;
 //  IOM0_SDA pin: I/O Master 0 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM0_SDA            	6
+#define AM_BSP_GPIO_IOM0_SDA            6
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM0_SDA;
 
 //*****************************************************************************
 //
-//  IOM1_CS pin: I/O Master 1 chip select.
+//  IOM1_CS pin: I/O Master 1 chip select 0.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_CS             	23
+#define AM_BSP_GPIO_IOM1_CS             23
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_CS;
 #define AM_BSP_IOM1_CS_CHNL             0
 
 //*****************************************************************************
 //
-//  IOM1_CS pin: I/O Master 1 chip select.
+//  IOM1_CS2 pin: I/O Master 1 chip select 2.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_CS             	18
+#define AM_BSP_GPIO_IOM1_CS2            18
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_CS2;
-#define AM_BSP_IOM1_CS2_CHNL             2
+#define AM_BSP_IOM1_CS2_CHNL            2
 
 //*****************************************************************************
 //
 //  IOM1_MISO pin: I/O Master 1 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_MISO           	9
+#define AM_BSP_GPIO_IOM1_MISO           9
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_MISO;
 
 //*****************************************************************************
@@ -225,7 +225,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_MISO;
 //  IOM1_MOSI pin: I/O Master 1 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_MOSI           	10
+#define AM_BSP_GPIO_IOM1_MOSI           10
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_MOSI;
 
 //*****************************************************************************
@@ -233,7 +233,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_MOSI;
 //  IOM1_SCK pin: I/O Master 1 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_SCK            	8
+#define AM_BSP_GPIO_IOM1_SCK            8
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SCK;
 
 //*****************************************************************************
@@ -241,7 +241,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SCK;
 //  IOM1_SCL pin: I/O Master 1 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_SCL            	8
+#define AM_BSP_GPIO_IOM1_SCL            8
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SCL;
 
 //*****************************************************************************
@@ -249,7 +249,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SCL;
 //  IOM1_SDA pin: I/O Master 1 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM1_SDA            	9
+#define AM_BSP_GPIO_IOM1_SDA            9
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SDA;
 
 //*****************************************************************************
@@ -257,7 +257,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM1_SDA;
 //  IOM2_CS pin: I/O Master 2 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_CS             	34
+#define AM_BSP_GPIO_IOM2_CS             34
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_CS;
 #define AM_BSP_IOM2_CS_CHNL             3
 
@@ -266,7 +266,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_CS;
 //  IOM2_MISO pin: I/O Master 2 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_MISO           	25
+#define AM_BSP_GPIO_IOM2_MISO           25
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_MISO;
 
 //*****************************************************************************
@@ -274,7 +274,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_MISO;
 //  IOM2_MOSI pin: I/O Master 2 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_MOSI           	28
+#define AM_BSP_GPIO_IOM2_MOSI           28
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_MOSI;
 
 //*****************************************************************************
@@ -282,7 +282,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_MOSI;
 //  IOM2_SCK pin: I/O Master 2 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_SCK            	27
+#define AM_BSP_GPIO_IOM2_SCK            27
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SCK;
 
 //*****************************************************************************
@@ -290,7 +290,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SCK;
 //  IOM2_SCL pin: I/O Master 2 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_SCL            	27
+#define AM_BSP_GPIO_IOM2_SCL            27
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SCL;
 
 //*****************************************************************************
@@ -298,7 +298,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SCL;
 //  IOM2_SDA pin: I/O Master 2 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM2_SDA            	25
+#define AM_BSP_GPIO_IOM2_SDA            25
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SDA;
 
 //*****************************************************************************
@@ -306,7 +306,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM2_SDA;
 //  IOM3_CS pin: I/O Master 3 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_CS             	12
+#define AM_BSP_GPIO_IOM3_CS             12
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_CS;
 #define AM_BSP_IOM3_CS_CHNL             0
 
@@ -315,7 +315,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_CS;
 //  IOM3_MISO pin: I/O Master 3 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_MISO           	43
+#define AM_BSP_GPIO_IOM3_MISO           43
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_MISO;
 
 //*****************************************************************************
@@ -323,7 +323,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_MISO;
 //  IOM3_MOSI pin: I/O Master 3 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_MOSI           	38
+#define AM_BSP_GPIO_IOM3_MOSI           38
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_MOSI;
 
 //*****************************************************************************
@@ -331,7 +331,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_MOSI;
 //  IOM3_SCK pin: I/O Master 3 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_SCK            	42
+#define AM_BSP_GPIO_IOM3_SCK            42
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SCK;
 
 //*****************************************************************************
@@ -339,7 +339,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SCK;
 //  IOM3_SCL pin: I/O Master 3 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_SCL            	42
+#define AM_BSP_GPIO_IOM3_SCL            42
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SCL;
 
 //*****************************************************************************
@@ -347,7 +347,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SCL;
 //  IOM3_SDA pin: I/O Master 3 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM3_SDA            	43
+#define AM_BSP_GPIO_IOM3_SDA            43
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SDA;
 
 //*****************************************************************************
@@ -355,7 +355,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM3_SDA;
 //  IOM4_CS pin: I/O Master 4 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_CS             	13
+#define AM_BSP_GPIO_IOM4_CS             13
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_CS;
 #define AM_BSP_IOM4_CS_CHNL             1
 
@@ -364,7 +364,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_CS;
 //  IOM4_MISO pin: I/O Master 4 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_MISO           	40
+#define AM_BSP_GPIO_IOM4_MISO           40
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_MISO;
 
 //*****************************************************************************
@@ -372,7 +372,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_MISO;
 //  IOM4_MOSI pin: I/O Master 4 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_MOSI           	44
+#define AM_BSP_GPIO_IOM4_MOSI           44
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_MOSI;
 
 //*****************************************************************************
@@ -380,7 +380,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_MOSI;
 //  IOM4_SCK pin: I/O Master 4 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_SCK            	39
+#define AM_BSP_GPIO_IOM4_SCK            39
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SCK;
 
 //*****************************************************************************
@@ -388,7 +388,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SCK;
 //  IOM4_SCL pin: I/O Master 4 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_SCL            	39
+#define AM_BSP_GPIO_IOM4_SCL            39
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SCL;
 
 //*****************************************************************************
@@ -396,7 +396,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SCL;
 //  IOM4_SDA pin: I/O Master 4 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM4_SDA            	40
+#define AM_BSP_GPIO_IOM4_SDA            40
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SDA;
 
 //*****************************************************************************
@@ -404,7 +404,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM4_SDA;
 //  IOM5_CS pin: I/O Master 5 chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_CS             	16
+#define AM_BSP_GPIO_IOM5_CS             16
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_CS;
 #define AM_BSP_IOM5_CS_CHNL             0
 
@@ -413,7 +413,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_CS;
 //  IOM5_MISO pin: I/O Master 5 SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_MISO           	49
+#define AM_BSP_GPIO_IOM5_MISO           49
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_MISO;
 
 //*****************************************************************************
@@ -421,7 +421,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_MISO;
 //  IOM5_MOSI pin: I/O Master 5 SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_MOSI           	47
+#define AM_BSP_GPIO_IOM5_MOSI           47
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_MOSI;
 
 //*****************************************************************************
@@ -429,7 +429,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_MOSI;
 //  IOM5_SCK pin: I/O Master 5 SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_SCK            	48
+#define AM_BSP_GPIO_IOM5_SCK            48
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SCK;
 
 //*****************************************************************************
@@ -437,7 +437,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SCK;
 //  IOM5_SCL pin: I/O Master 5 I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_SCL            	48
+#define AM_BSP_GPIO_IOM5_SCL            48
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SCL;
 
 //*****************************************************************************
@@ -445,7 +445,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SCL;
 //  IOM5_SDA pin: I/O Master 5 I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOM5_SDA            	49
+#define AM_BSP_GPIO_IOM5_SDA            49
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SDA;
 
 //*****************************************************************************
@@ -453,7 +453,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOM5_SDA;
 //  MSPI_CE0 pin: MSPI chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_CE0            	19
+#define AM_BSP_GPIO_MSPI_CE0            19
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_CE0;
 #define AM_BSP_MSPI_CE0_CHNL            0
 
@@ -462,7 +462,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_CE0;
 //  MSPI_CE1 pin: MSPI chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_CE1            	41
+#define AM_BSP_GPIO_MSPI_CE1            41
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_CE1;
 #define AM_BSP_MSPI_CE1_CHNL            1
 
@@ -471,7 +471,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_CE1;
 //  MSPI_D0 pin: MSPI data 0.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D0             	22
+#define AM_BSP_GPIO_MSPI_D0             22
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D0;
 
 //*****************************************************************************
@@ -479,7 +479,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D0;
 //  MSPI_D1 pin: MSPI data 1.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D1             	26
+#define AM_BSP_GPIO_MSPI_D1             26
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D1;
 
 //*****************************************************************************
@@ -487,7 +487,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D1;
 //  MSPI_D2 pin: MSPI data 2.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D2             	4
+#define AM_BSP_GPIO_MSPI_D2             4
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D2;
 
 //*****************************************************************************
@@ -495,7 +495,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D2;
 //  MSPI_D3 pin: MSPI data 3.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D3             	23
+#define AM_BSP_GPIO_MSPI_D3             23
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D3;
 
 //*****************************************************************************
@@ -503,7 +503,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D3;
 //  MSPI_D4 pin: MSPI data 4.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D4             	0
+#define AM_BSP_GPIO_MSPI_D4             0
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D4;
 
 //*****************************************************************************
@@ -511,7 +511,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D4;
 //  MSPI_D5 pin: MSPI data 5.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D5             	1
+#define AM_BSP_GPIO_MSPI_D5             1
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D5;
 
 //*****************************************************************************
@@ -519,7 +519,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D5;
 //  MSPI_D6 pin: MSPI data 6.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D6             	2
+#define AM_BSP_GPIO_MSPI_D6             2
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D6;
 
 //*****************************************************************************
@@ -527,7 +527,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D6;
 //  MSPI_D7 pin: MSPI data 7.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_D7             	3
+#define AM_BSP_GPIO_MSPI_D7             3
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D7;
 
 //*****************************************************************************
@@ -535,7 +535,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_D7;
 //  MSPI_SCK pin: MSPI clock.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_MSPI_SCK            	24
+#define AM_BSP_GPIO_MSPI_SCK            24
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_SCK;
 
 //*****************************************************************************
@@ -543,7 +543,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_MSPI_SCK;
 //  IOS_CE pin: I/O Slave chip select.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_CE              	3
+#define AM_BSP_GPIO_IOS_CE              3
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_CE;
 #define AM_BSP_IOS_CE_CHNL              0
 
@@ -552,7 +552,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_CE;
 //  IOS_MISO pin: I/O Slave SPI MISO signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_MISO            	2
+#define AM_BSP_GPIO_IOS_MISO            2
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_MISO;
 
 //*****************************************************************************
@@ -560,7 +560,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_MISO;
 //  IOS_MOSI pin: I/O Slave SPI MOSI signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_MOSI            	1
+#define AM_BSP_GPIO_IOS_MOSI            1
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_MOSI;
 
 //*****************************************************************************
@@ -568,7 +568,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_MOSI;
 //  IOS_SCK pin: I/O Slave SPI SCK signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_SCK             	0
+#define AM_BSP_GPIO_IOS_SCK             0
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SCK;
 
 //*****************************************************************************
@@ -576,7 +576,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SCK;
 //  IOS_SCL pin: I/O Slave I2C clock signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_SCL             	0
+#define AM_BSP_GPIO_IOS_SCL             0
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SCL;
 
 //*****************************************************************************
@@ -584,7 +584,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SCL;
 //  IOS_SDA pin: I/O Slave I2C data signal.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_IOS_SDA             	1
+#define AM_BSP_GPIO_IOS_SDA             1
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SDA;
 
 //*****************************************************************************
@@ -592,7 +592,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_IOS_SDA;
 //  ITM_SWO pin: ITM Serial Wire Output.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_ITM_SWO             	33
+#define AM_BSP_GPIO_ITM_SWO             33
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_ITM_SWO;
 
 //*****************************************************************************
@@ -600,7 +600,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_ITM_SWO;
 //  SWDCK pin: Cortex Serial Wire DCK.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_SWDCK               	20
+#define AM_BSP_GPIO_SWDCK               20
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_SWDCK;
 
 //*****************************************************************************
@@ -608,7 +608,7 @@ extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_SWDCK;
 //  SWDIO pin: Cortex Serial Wire DIO.
 //
 //*****************************************************************************
-#define AM_BSP_GPIO_SWDIO               	21
+#define AM_BSP_GPIO_SWDIO               21
 extern const am_hal_gpio_pincfg_t       g_AM_BSP_GPIO_SWDIO;
 
 

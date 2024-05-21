@@ -12,24 +12,24 @@
 #
 #	Copyright (c) 2019, Ambiq Micro
 #	All rights reserved.
-#	
+#
 #	Redistribution and use in source and binary forms, with or without
 #	modification, are permitted provided that the following conditions are met:
-#	
+#
 #	1. Redistributions of source code must retain the above copyright notice,
 #	this list of conditions and the following disclaimer.
-#	
+#
 #	2. Redistributions in binary form must reproduce the above copyright
 #	notice, this list of conditions and the following disclaimer in the
 #	documentation and/or other materials provided with the distribution.
-#	
+#
 #	3. Neither the name of the copyright holder nor the names of its
 #	contributors may be used to endorse or promote products derived from this
 #	software without specific prior written permission.
-#	
+#
 #	Third party software included in this distribution is subject to the
 #	additional license terms as defined in the /docs/licenses directory.
-#	
+#
 #	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 #	AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 #	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -77,24 +77,24 @@ filetemplateC = '''
 //
 // Copyright (c) 2019, Ambiq Micro
 // All rights reserved.
-// 
+//
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
-// 
+//
 // 1. Redistributions of source code must retain the above copyright notice,
 // this list of conditions and the following disclaimer.
-// 
+//
 // 2. Redistributions in binary form must reproduce the above copyright
 // notice, this list of conditions and the following disclaimer in the
 // documentation and/or other materials provided with the distribution.
-// 
+//
 // 3. Neither the name of the copyright holder nor the names of its
 // contributors may be used to endorse or promote products derived from this
 // software without specific prior written permission.
-// 
+//
 // Third party software included in this distribution is subject to the
 // additional license terms as defined in the /docs/licenses directory.
-// 
+//
 // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 // AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 // IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -141,24 +141,24 @@ filetemplateH = '''
 //
 // Copyright (c) 2019, Ambiq Micro
 // All rights reserved.
-// 
+//
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
-// 
+//
 // 1. Redistributions of source code must retain the above copyright notice,
 // this list of conditions and the following disclaimer.
-// 
+//
 // 2. Redistributions in binary form must reproduce the above copyright
 // notice, this list of conditions and the following disclaimer in the
 // documentation and/or other materials provided with the distribution.
-// 
+//
 // 3. Neither the name of the copyright holder nor the names of its
 // contributors may be used to endorse or promote products derived from this
 // software without specific prior written permission.
-// 
+//
 // Third party software included in this distribution is subject to the
 // additional license terms as defined in the /docs/licenses directory.
-// 
+//
 // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 // AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 // IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -493,13 +493,13 @@ def write_Cfiles(pinobj, bCreateC):
             if bga and args.bgaguard:
                 strHfile += '#if defined (' + args.bgaguard + ')\n'
 
-            strHfile += '#define ' + args.prefix + '_%-20s\t' % pin.name  +  '%d\n' % pin.pinnum
+            strHfile += '#define ' + args.prefix + '_%-20s' % pin.name  +  '%d\n' % pin.pinnum
             strHfile += 'extern const am_hal_gpio_pincfg_t       g_' + args.prefix + '_%s;\n' % pin.name
 
             if bga and args.bgaguard:
                 strHfile += '#endif // ' + args.bgaguard + '\n'
             #strHfile += '\n'
-    
+
         if bga and args.bgaguard:
             strCfile += '#if defined (' + args.bgaguard + ')\n'
 
